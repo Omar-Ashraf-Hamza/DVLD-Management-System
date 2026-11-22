@@ -1,0 +1,23 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio cache
+*.cache
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Database files
+*.mdf
+*.ldf
