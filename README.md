@@ -70,7 +70,7 @@ DVLD-Management-System/
 ## ⚙️ Requirements
 
 - Windows
-- Visual Studio 2022
+- Visual Studio 2026
 - .NET Framework (the version configured in the project)
 - Microsoft SQL Server
 - SQL Server Management Studio (SSMS)
