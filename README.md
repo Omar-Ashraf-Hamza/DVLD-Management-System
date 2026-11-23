@@ -1,25 +1,31 @@
 # DVLD - Driving & Vehicle License Department Management System
 
-A desktop application designed to manage driving and vehicle license department operations, including people, drivers, applications, and licenses.
+A desktop application designed to manage the operations of a Driving and Vehicle License Department.
+
+The system helps organize people, drivers, applications, and driving licenses through a structured and maintainable application.
+
+---
 
 ## 📌 Project Overview
 
-The **DVLD Management System** is a Windows desktop application built using C# and .NET. It helps organize and manage the main operations of a driving and vehicle licensing department through a structured and maintainable application.
+The **DVLD Management System** is a Windows desktop application developed using C# and .NET Framework.
 
-The project follows a **Three-Tier Architecture** to separate the presentation, business logic, and data access responsibilities.
+The project follows a **Three-Tier Architecture**, separating the application into three independent layers to improve code organization, maintainability, and scalability.
+
+---
 
 ## 🏗️ Architecture
 
-The application is organized into three main layers:
+The application consists of three main layers:
 
 ### 1. Presentation Layer
 - Provides the graphical user interface.
 - Handles user interactions.
-- Displays information and application results.
+- Displays application data and results.
 
 ### 2. Business Logic Layer
 - Contains the application's business rules.
-- Processes application operations.
+- Handles business operations and validations.
 - Connects the presentation layer with the data access layer.
 
 ### 3. Data Access Layer
@@ -27,24 +33,62 @@ The application is organized into three main layers:
 - Executes database operations.
 - Retrieves and updates application data.
 
+---
+
 ## 🛠️ Technologies Used
 
-- **C#**
-- **.NET Framework**
-- **Windows Forms (WinForms)**
-- **Microsoft SQL Server**
-- **ADO.NET**
-- **Visual Studio**
+- C#
+- .NET Framework
+- Windows Forms (WinForms)
+- Microsoft SQL Server
+- ADO.NET
+- Visual Studio 2026
+
+---
 
 ## ✨ Main Features
 
 - People Management
 - Drivers Management
+- User Management
 - Local Driving License Applications
 - License Management
 - International Driving Licenses
-- Application Management
-- User Management
+- Test Types Management
+
+---
+
+## 🖥️ Application Screenshots
+
+### Main Dashboard
+
+![Main Dashboard](Screenshots/Main.png)
+
+### People Management
+
+![People Management](Screenshots/People.png)
+
+### Users Management
+
+![Users Management](Screenshots/Users.png)
+
+### Drivers Management
+
+![Drivers Management](Screenshots/Drivers.png)
+
+### Local Driving License Applications
+
+![Local License Applications](Screenshots/Local-Licenses.png)
+
+### International Driving Licenses
+
+![International Licenses](Screenshots/International-Licenses.png)
+
+### Test Types Management
+
+![Test Types Management](Screenshots/Manage%20Test%20Type.png)
+
+---
 
 ## 📂 Project Structure
 
@@ -52,50 +96,78 @@ The application is organized into three main layers:
 DVLD-Management-System/
 │
 ├── DVLD/
-│   ├── Presentation Layer
-│   ├── Forms
-│   ├── User Controls
-│   └── App.config
+│   ├── DVLD.sln
+│   ├── App.config
+│   └── ...
 │
 ├── DVLD_Buisness/
-│   └── Business Logic Layer
+│   └── ...
 │
 ├── DVLD_DataAccess/
-│   └── Data Access Layer
+│   └── ...
+│
+├── Screenshots/
+│   ├── Drivers.png
+│   ├── International-Licenses.png
+│   ├── Local-Licenses.png
+│   ├── Main.png
+│   ├── Manage Test Type.png
+│   ├── People.png
+│   └── Users.png
 │
 ├── .gitignore
 └── README.md
 ```
 
+---
+
 ## ⚙️ Requirements
 
-- Windows
+- Windows Operating System
 - Visual Studio 2026
-- .NET Framework (the version configured in the project)
+- The .NET Framework version targeted by the solution
 - Microsoft SQL Server
 - SQL Server Management Studio (SSMS)
 
+---
+
 ## 🚀 Getting Started
 
-1. Clone the repository:
+### 1. Clone the Repository
 
-   ```bash
-   git clone https://github.com/Omar-Ashraf-Hamza/DVLD-Management-System.git
-   ```
+```bash
+git clone https://github.com/Omar-Ashraf-Hamza/DVLD-Management-System.git
+```
 
-2. Open the solution file `DVLD.sln` inside the `DVLD` folder using Visual Studio.
+### 2. Open the Project
 
-3. Create and configure the required SQL Server database.
+Open `DVLD.sln` from the `DVLD` folder using Visual Studio.
 
-4. Check the database connection string in `App.config` and update the server name if necessary.
+### 3. Configure the Database
 
-5. Build and run the application.
+Make sure Microsoft SQL Server is installed and the required DVLD database is available.
+
+### 4. Configure the Connection String
+
+Open `App.config` in the startup project and update the connection string according to your SQL Server instance.
+
+The application is configured to use Windows Authentication.
+
+### 5. Build and Run
+
+Build the solution and run the application from Visual Studio.
+
+---
 
 ## 🗄️ Database Configuration
 
-The application uses SQL Server with Windows Authentication.
+The application uses Microsoft SQL Server for data storage.
 
-Make sure the database is created and configured correctly before running the application.
+The database connection is configured through the application's configuration file (`App.config`).
+
+Make sure the required database exists before running the application.
+
+---
 
 ## 👨‍💻 Author
 
@@ -105,4 +177,4 @@ Make sure the database is created and configured correctly before running the ap
 
 ---
 
-⭐ If you find this project useful, feel free to explore the repository.
+⭐ If you find this project interesting, feel free to explore the repository!
